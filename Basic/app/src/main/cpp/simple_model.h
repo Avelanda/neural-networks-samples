@@ -16,8 +16,8 @@
  */
 
 /* Reimagining the simple granular model as the fundamental structure of
-   modularity. And rethinking they internal framework that optimizes the set
-   with optimal functioning and computing power. */
+   modularity. And rethinking the internal framework that optimizes the set
+   with optimal functions, and enhanced computing power. */
 
 #include <stdio.h>
 
