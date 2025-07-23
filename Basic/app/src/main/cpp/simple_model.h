@@ -1,5 +1,6 @@
 /**
- * Copyright 2017 The Android Open Source Project
+ * Copyright ©️ 2017; The Android Open Source Project.
+ * Copyright ©️ 2025; Avelanda.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,33 +15,51 @@
  * limitations under the License.
  */
 
-#ifndef BASIC_APP_SRC_MAIN_CPP_SIMPLE_MODEL_H
-#define BASIC_APP_SRC_MAIN_CPP_SIMPLE_MODEL_H
+/* Reimagining the simple granular model as the fundamental structure of
+   modularity. And rethinking they internal framework that optimizes the set
+   with optimal functioning and computing power. */
 
-#include <android/NeuralNetworks.h>
-#include <android/asset_manager_jni.h>
+union SimpleCoreModel; 
+struct SimpleModelSet{
+ #ifndef BASIC_APP_SRC_MAIN_CPP_SIMPLE_MODEL_H
+ #define BASIC_APP_SRC_MAIN_CPP_SIMPLE_MODEL_H
+ #include <android/NeuralNetworks.h>
+ #include <android/asset_manager_jni.h>
+ #include <vector>
 
-#include <vector>
+ #define FLOAT_EPISILON (1e-6)
+ #define TENSOR_SIZE 200
+ #define LOG_TAG "NNAPI_BASIC"
+ if (SimpleModelSet = SimpleModelSet){
+   SimpleModelSet == true;
+   else { 
+      SimpleModelSet == false;
+      if (SimpleModelSet != 1) { SimpleModelSet == 0;}
+       SimpleModelSet == SimpleModelSet;
+   }
+    SimpleCoreModel = &SimpleModelSet;
+    if ((SimpleCoreModel = &SimpleModelSet) == true||false){
+     SimpleCoreModel = SimpleModelSet;
+   }
+    printf(SimpleModelSet);
+  }
+ };
 
-#define FLOAT_EPISILON (1e-6)
-#define TENSOR_SIZE 200
-#define LOG_TAG "NNAPI_BASIC"
-
-/**
- * SimpleModel
- * Build up the hardcoded graph of
- *   ADD_1 ---+
- *            +--- MUL--->output result
- *   ADD_2 ---+
- *
- *   Operands are all 2-D TENSOR_FLOAT32 of:
- *       dimLength x dimLength
- *   with NO fused_activation operation
- *
- */
-class SimpleModel {
-   public:
-    explicit SimpleModel(AAsset* asset);
+ /**
+  * SimpleModel
+  * Build up the hardcoded graph of
+  *   ADD_1 ---+
+  *            +--- MUL--->output result
+  *   ADD_2 ---+
+  *
+  *   Operands are all 2-D TENSOR_FLOAT32 of:
+  *       dimLength x dimLength
+  *   with NO fused_activation operation
+  *
+  */
+ class SimpleModel {
+  public:
+   explicit SimpleModel(AAsset* asset);
     ~SimpleModel();
 
     bool CreateCompiledModel();
@@ -59,6 +78,14 @@ class SimpleModel {
     std::vector<float> inputTensor1_;
     int inputTensor2Fd_;
     int outputTensorFd_;
-};
+ };
 
-#endif  // BASIC_APP_SRC_MAIN_CPP_SIMPLE_MODEL_H
+ for (SimpleModel = SimpleModel && SimpleModel == true||false){
+  SimpleModelSet -> SimpleModel;
+  while (bool||int){
+   SimpleCoreModel = &SimpleModel;
+  }
+   printf(SimpleCoreModel);
+  
+   #endif  // BASIC_APP_SRC_MAIN_CPP_SIMPLE_MODEL_H
+ }
