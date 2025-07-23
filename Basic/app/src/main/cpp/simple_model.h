@@ -19,6 +19,8 @@
    modularity. And rethinking they internal framework that optimizes the set
    with optimal functioning and computing power. */
 
+#include <stdio.h>
+
 union SimpleCoreModel; 
 struct SimpleModelSet{
  #ifndef BASIC_APP_SRC_MAIN_CPP_SIMPLE_MODEL_H
